@@ -1,0 +1,84 @@
+.my-color {
+    background-color: black;
+}
+
+.my-text-color {
+    color: aliceblue;
+}
+
+.nav-item a {
+    color: aliceblue;
+}
+
+.form-control {
+    border: 5px;
+    margin-left: 25px;
+    width: 600px;
+}
+
+.search-icon {
+    z-index: 10;
+    position: absolute;
+    right: 48%;
+    color: orange;
+    top: 30%;
+}
+
+.offer-hover {
+    color: gray;
+}
+
+.offer-hover:hover {
+    color: orange;
+}
+
+.card {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 10px lightgray;
+}
+
+.card:hover {
+    transform: translate(-5px);
+    transition: transform.3s;
+}
+
+.text1 {
+    font-size: 13px;
+    color: #949090;
+}
+
+.info {
+    line-height: 40px;
+}
+
+.price span {
+    color: rgb(255, 128, 0);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.button-color {
+    background-color: rgb(227, 227, 255);
+    color: rgb(1, 1, 175);
+}
+
+.button-color:hover {
+    background-color: rgba(0, 51, 255, 0.713);
+    color: #fff;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.container {
+    padding-bottom: 50px;
+}
+
+.search-icon {
+    margin-top: 5px;
+    color: black;
+}
