@@ -71,6 +71,7 @@ export class HomeComponent implements OnInit {
    // console.log(prod)
    if(prod.qnt!=1){
     prod.qnt -= 1;
+    //console
 
    }
 

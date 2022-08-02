@@ -1,0 +1,37 @@
+.cart_value {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: rgb(255, 50, 50);
+    color: aliceblue;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 10%;
+}
+
+.icon-button:hover {
+    transform: translate(-2px);
+    transition: transform.2s;
+    background-color: rgb(102, 102, 217);
+}
+
+button.icon-button {
+    margin-left: 94%;
+}
