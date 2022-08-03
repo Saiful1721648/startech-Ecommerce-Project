@@ -34,4 +34,8 @@
 
 button.icon-button {
     margin-left: 94%;
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 3%;
+    font-size: 15px;
 }
