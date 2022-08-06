@@ -106,6 +106,7 @@ export class HomeComponent implements OnInit {
       else{
         localStorage.setItem('localCart',JSON.stringify(this.itemsCart));
       }
+      this.cartNumberFunc();
 
 
 
@@ -114,6 +115,16 @@ export class HomeComponent implements OnInit {
 
 
 
+
+
+
+  }
+
+  cartNumber:number=0;
+  cartNumberFunc(){
+    var cartValue =JSON.parse(localStorage.getItem('localCart')!)  ;
+    this.cartNumber=cartValue.length ;
+    console.log(this.cartNumber);
 
 
 
