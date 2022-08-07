@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CartupdateService} from '../../services/cartupdate.service'
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private auth :CartupdateService) { }
 
   ngOnInit(): void {
   }
@@ -123,8 +124,10 @@ export class HomeComponent implements OnInit {
   cartNumber:number=0;
   cartNumberFunc(){
     var cartValue =JSON.parse(localStorage.getItem('localCart')!)  ;
+
     this.cartNumber=cartValue.length ;
-    console.log(this.cartNumber);
+   // console.log(this.cartNumber);
+   this.auth.cartSubject.next(this.cartNumber);
 
 
 
