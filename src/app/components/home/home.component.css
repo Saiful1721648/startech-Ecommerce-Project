@@ -3,12 +3,13 @@
     outline: none;
     background-color: #fff;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px 10px lightgray;
+    box-shadow: 0 0 10px 10px rgb(242, 242, 242);
 }
 
 .card:hover {
-    transform: translate(-5px);
+    transform: scale(1.005);
     transition: transform.3s;
+    box-shadow: 0 0 10px 10px rgb(236, 235, 235);
 }
 
 .text1 {

@@ -79,6 +79,9 @@
 }
 
 .search-icon {
-    margin-top: 5px;
-    color: black;
+    position: absolute;
+    z-index: 10;
+    right: 61%;
+    color: blue;
+    top: 28px;
 }

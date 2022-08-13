@@ -9,13 +9,17 @@ import { CartComponent } from './components/cart/cart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatIconModule} from '@angular/material/icon';
+import { ProductsComponent } from './components/products/products.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    CartComponent
+    CartComponent,
+    ProductsComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,

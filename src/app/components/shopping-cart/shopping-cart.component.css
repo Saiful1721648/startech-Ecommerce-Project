@@ -1,0 +1,150 @@
+    table {
+        font-family: arial, sans-serif;
+        /* border-collapse: separate;*/
+        width: 100%;
+        border-spacing: 2px;
+        text-indent: initial;
+        border-radius: 5px;
+        box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    }
+
+    th {
+        text-align: center;
+        padding: 14px 10px;
+        background-color: #f5f7f9;
+        color: #666;
+        font-weight: 600;
+        font-size: 13px;
+    }
+
+    td {
+        text-align: center;
+        padding: 8px;
+        vertical-align: inherit;
+        display: table-cell;
+        line-height: 5px;
+        box-sizing: border-box;
+    }
+
+    tr {
+        background-color: #fff;
+    }
+    /* tr:nth-child(even) {
+    background-color: #fff;
+}  */
+
+    .cart_section {
+        padding: 50px 0;
+    }
+
+    .btn-plus-minus {
+        background-color: black;
+        border-radius: 50%;
+        font-size: 16px;
+        color: rgb(255, 128, 0);
+        margin: 0 12px;
+    }
+
+    img {
+        height: auto;
+        width: 100px;
+        max-width: 100%;
+        border-style: none;
+        vertical-align: middle;
+    }
+
+    .total_tk {
+        color: #ef4a23;
+        font-weight: bold;
+    }
+
+    table.cart-total td {
+        font-size: 18px;
+    }
+
+    .table-bordered tbody td {
+        padding: 15px 10px;
+        border: none;
+    }
+
+    .text-right {
+        text-align: right;
+    }
+
+    .col-sm-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    table.cart-total {
+        float: right;
+        max-width: 300px;
+        margin: 20px 0 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 5px;
+    }
+
+    .checkout-cart .page-section {
+        padding: 20px;
+        background: #f1f5f9;
+    }
+
+    .ws-box {
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    }
+
+    .input-group input {
+        flex: 1 1 auto;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 15px;
+        height: 42px;
+        padding: 5px 15px;
+        background: #fff;
+        outline: none;
+        width: 100%;
+        font-family: "Trebuchet MS", sans-serif;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .st-outline {
+        background: none;
+        color: #3749bb;
+    }
+
+    .btncv :hover {
+        background: #3749bb;
+        display: inline-block;
+        border: 2px solid #3749bb;
+        padding: 1px 20px;
+        margin: 0;
+        height: 40px;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 4px;
+        outline: none;
+        text-align: center;
+        transition: all 300ms linear;
+    }
+
+    .buttons {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-top: 1px solid #eee;
+        margin-bottom: 70px;
+        padding-top: 30px;
+    }
