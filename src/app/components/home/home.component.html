@@ -10,7 +10,7 @@
                     <div class="col-md-3" *ngFor="let prod of productArray">
                         <div class="card mt-3 ">
                             <div class="product-1 align-items-center p-2 text-center">
-                                <img class="responsive" src="{{prod.img}}" alt="p1" class="rounded" width="190" height="220">
+                                <img class="responsive" src="{{prod.img}}" alt="p1" class="rounded" width="80" height="220">
                                 <h2>{{prod.productTitle}}</h2>
                                 <!--card info-->
                                 <div class="t-3 info">
@@ -21,9 +21,9 @@
                                 </div>
                                 <!--plus-minus-->
                                 <div class="content">
-                                    <button type="button" class="btn btn-plus-minus" (click)="inc(prod)"><i class="fa fa-plus"></i></button>
+                                    <label type="button" class="btn btn-plus-minus" (click)="inc(prod)"><i class="fa fa-plus"></i></label>
                                     <span>{{prod.qnt}}</span>
-                                    <button type="button" class="btn btn-plus-minus" (click)="dec(prod)"><i class="fa fa-minus"></i></button>
+                                    <label type="button" class="btn btn-plus-minus" (click)="dec(prod)"><i class="fa fa-minus"></i></label>
                                 </div>
                                 <!--plus-minus end-->
 

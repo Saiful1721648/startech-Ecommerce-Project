@@ -128,19 +128,19 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <tr *ngFor="let getCartDetails of getCartDetailss">
                                             <td class="name">
-                                                <a href="#">ASUS VivoStick </a>
+                                                <a href="#">{{getCartDetails.productTitle}} </a>
                                                 <div class="options">
                                                 </div>
-                                                <div class="fade">Star Points: 360</div>
+
                                             </td>
-                                            <td class="price"><span>16,500৳</span> <span> x </span> <span>2</span></td>
-                                            <td class="price text-right">33,000৳ </td>
+                                            <td class="price"><span>{{getCartDetails.amt}}</span> <span> x </span> <span>{{getCartDetails.qnt}}</span></td>
+                                            <td class="price text-right">{{getCartDetails.qnt *getCartDetails.amt | number}}</td>
                                         </tr>
                                         <tr class="total">
                                             <td colspan="2" class="text-right"><strong>Sub-Total:</strong></td>
-                                            <td class="text-right"><span class="amount">33,000৳</span></td>
+                                            <td class="text-right"><span class="amount">{{total}}৳</span></td>
                                         </tr>
                                         <tr class="total">
                                             <td colspan="2" class="text-right"><strong>Home Delivery:</strong></td>
@@ -148,7 +148,7 @@
                                         </tr>
                                         <tr class="total">
                                             <td colspan="2" class="text-right"><strong>Total:</strong></td>
-                                            <td class="text-right"><span class="amount">33,060৳</span></td>
+                                            <td class="text-right"><span class="amount">{{checkoutTotal}}৳</span></td>
                                         </tr>
                                     </tbody>
                                 </table>
