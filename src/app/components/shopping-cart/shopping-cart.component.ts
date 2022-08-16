@@ -12,6 +12,7 @@ export class ShoppingCartComponent implements OnInit {
   ngOnInit(): void {
     this.CartDetails();
     this.loadCart();
+
   }
 getCartDetails:any=[];
 
@@ -65,13 +66,30 @@ this.getCartDetails= JSON.parse(localStorage.getItem('localCart')!);
     if(localStorage.getItem('localCart')){
       this.getCartDetails= JSON.parse(localStorage.getItem('localCart')!);
     this.total= this.getCartDetails.reduce(function(acc:any,val:any){
-       return acc+ (val.amt +val.qnt ) ;
+       return acc+ (val.amt * val.qnt ) ;
 
     },0);
 
     }
 
   }
+  //single delete product item
+ /* singleDelete(getCartDetail:any){
+   // console.log(getCartDetail);
+    if(localStorage.getItem('localCart')){
+      this.getCartDetails =JSON.parse(localStorage.getItem('localCart')!);
+      for(let i=0 ; i<this.getCartDetails.length ;i++){
+        if(this.getCartDetails[i].prodId === getCartDetail){
+          this.getCartDetails.splice(i,1);
+          localStorage.setItem('localCart',JSON.stringify('this.getCartDetails'))
+          this.loadCart();
+        }
 
+      }
+    }
+
+
+
+  }         */
 
 }

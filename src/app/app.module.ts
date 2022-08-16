@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import { ProductsComponent } from './components/products/products.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { OnepagecheckoutComponent } from './components/onepagecheckout/onepagecheckout.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
     HomeComponent,
     CartComponent,
     ProductsComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    OnepagecheckoutComponent
   ],
   imports: [
     BrowserModule,
