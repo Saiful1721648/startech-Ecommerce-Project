@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-11 ">
+            <p mat-dialog-title>You have added <span class="protitle"><a href="#" class="prootitle" style="color:#ef4a23 ;text-decoration: none; border:none;">{{ products.productTitle }}</a></span> to your shopping cart!</p>
+        </div>
+        <div class="col-1">
+            <button mat-button mat-dialog-close style="background-color:white ;border:none;color:slategray;height:2px;"><mat-icon>clear</mat-icon></button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="row ">
+            <div class="col-12 d-flex justify-content-start">
+
+                <button mat-button mat-dialog-close type="button" class="btn  btn-popup-view-con" routerLink="/shoppingCart" style="margin:5px; width:25%; background:#3749bb; color:white;">
+              view cart
+            </button>
+
+
+                <button mat-button mat-dialog-close type="button" class="btn btn-primary btn-popup-view-con" style="margin:5px ;width:25%;background:#3749bb;" routerLink="/onepagecheckout">
+              confrim order
+            </button>
+
+            </div>
+        </div>
+    </div>

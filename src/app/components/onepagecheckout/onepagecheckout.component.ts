@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { Product } from 'src/app/model/product';
+import { ApiService } from 'src/app/services/api.service';
+import { ViewProductComponent } from '../view-product/view-product.component';
+import { DialogExampleComponent } from '../dialog-example/dialog-example.component';
 
 @Component({
   selector: 'app-onepagecheckout',
@@ -6,9 +11,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./onepagecheckout.component.css']
 })
 export class OnepagecheckoutComponent implements OnInit {
+  productLists: Product[] = [];
+  constructor(public dialog:MatDialog,private apiService: ApiService) { }
+  openDialogg(data:any){
+    this.dialog.open(ViewProductComponent,
+        {
+          data:data,
+          height: '70%',
+          width: '70%',
 
-  constructor() { }
+        }
 
+        );
+
+    }
   ngOnInit(): void {
     this.CartDetails();
     this.loadCart();

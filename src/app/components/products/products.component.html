@@ -1,32 +1,32 @@
-<div class="card-top ">
+<!--exp-->
+
+<div class="card-top">
     <div class="container d-flex">
-        <div class="item">
-            <a>
-                <h3>Desktop</h3>
-            </a>
-
-
-
-        </div>
-        <div class="item">
-            <a>
-                <h3>Destop</h3>
-            </a>
-        </div>
-        <div class="item">
-            <a>
-                <h3>Destop</h3>
-            </a>
-        </div>
-        <div class="item">
-            <a>
-                <h3>Destop</h3>
-            </a>
-        </div>
-        <div class="item">
-            <a>
-                <h3>Destop</h3>
-            </a>
-        </div>
+        <ul class="top-level-menu" *ngFor="let cat of category; let i = index">
+            <li>
+                <a (click)="catgoryMenu(cat.title)">{{ cat.title }}</a>
+                <ul class="second-level-menu">
+                    <ng-container *ngFor="let sub1 of subCategory1">
+                        <li *ngIf="sub1.categoryId === cat.id">
+                            <a (click)="catgoryMenu(sub1.title)">{{
+                sub1.categoryId === cat.id ? sub1.title : "null"
+              }}</a>
+                            <ul class="third-level-menu">
+                                <ng-container *ngFor="let sub2 of subCategory2">
+                                    <li *ngIf="sub2.subCategory1Id === sub1.id && sub2.categoryId">
+                                        <a (click)="catgoryMenu(sub2.title)">{{
+                      sub2.subCategory1Id === sub1.id &&
+                      sub2.categoryId === cat.id
+                        ? sub2.title
+                        : ""
+                    }}</a>
+                                    </li>
+                                </ng-container>
+                            </ul>
+                        </li>
+                    </ng-container>
+                </ul>
+            </li>
+        </ul>
     </div>
 </div>

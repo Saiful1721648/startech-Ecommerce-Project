@@ -38,11 +38,17 @@
     }
 
     .btn-plus-minus {
-        background-color: black;
-        border-radius: 50%;
+        background-color: rgb(255, 253, 253);
+        border-radius: 30%;
         font-size: 16px;
-        color: rgb(255, 128, 0);
+        color: rgb(0, 0, 0);
         margin: 0 12px;
+        border: 1px solid #ced5ff;
+    }
+
+    .btn-plus-minus:hover {
+        background-color: rgba(0, 51, 255, 0.713);
+        color: #fff;
     }
 
     img {
@@ -147,4 +153,15 @@
         border-top: 1px solid #eee;
         margin-bottom: 70px;
         padding-top: 30px;
+    }
+
+    .shopping-cart-title:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: #ef4a23;
+    }
+
+    .shopping-cart-img:hover {
+        cursor: pointer;
+        border: none;
     }

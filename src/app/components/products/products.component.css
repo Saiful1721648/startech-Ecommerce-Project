@@ -1,3 +1,18 @@
+.menu-bar {
+    position: relative;
+    background: #fff;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    width: 100%;
+    position: relative;
+}
+
 .card-top {
     position: relative;
     display: flex;
@@ -14,16 +29,149 @@
 }
 
 .item {
-    margin: 0px 15px;
+    margin: 0 15px;
     text-align: center;
+    position: relative;
+    padding: 0 5px 0 5px;
+    line-height: 50px;
+    white-space: nowrap;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
 }
 
-.item a:hover {
+.item:hover {
     color: tomato;
     cursor: pointer;
 }
 
-.item h3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
+html {
+    font-family: "Trebuchet MS", sans-serif;
+    line-height: 1.15;
+    font-size: 15px;
+}
+
+.second-level-menu {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.item:hover .second-level-menu {
+    display: block;
+    position: relative;
+    font-weight: normal;
+    font-size: 14px;
+    white-space: normal;
+    line-height: 19px;
+    padding: 4px 15px;
+    width: 200px;
+    color: #222;
+}
+
+
+/*exp*/
+
+.card-top {
+    margin: 0 50px 50px 0;
+    background: #fff;
+    background-clip: border-box;
+    border-radius: 0.25rem;
+    padding-left: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+
+/* menu */
+
+.third-level-menu {
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.third-level-menu>li {
+    height: 30px;
+    background: #01132d;
+}
+
+.third-level-menu>li:hover {
+    background: #01132d;
+}
+
+.second-level-menu {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.second-level-menu>li {
+    position: relative;
+    height: 30px;
+    background: #01132d;
+}
+
+.second-level-menu>li:hover {
+    background: #01132d;
+}
+
+.top-level-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.top-level-menu>li {
+    position: relative;
+    float: left;
+    height: 40px;
+    background: #01132d;
+    min-width: 130px;
+}
+
+.top-level-menu>li:hover {
+    background: #01132d;
+}
+
+.top-level-menu li:hover>ul {
+    /* On hover, display the next level's menu */
+    display: inline;
+}
+
+
+/* Menu Link Styles */
+
+.top-level-menu a
+/* Apply to all links inside the multi-level menu */
+
+{
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 0 0 10px;
+    /* Make the link cover the entire list item-container */
+    display: block;
+    line-height: 30px;
+}
+
+.top-level-menu a:hover {
+    color: #ff5050;
 }

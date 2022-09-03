@@ -2,14 +2,24 @@
     border: none;
     outline: none;
     background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 0 10px 10px rgb(242, 242, 242);
-    margin: 0 0 15px 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 10px rgb(246, 246, 246);
+    margin: 0 0 5px 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+html {
+    font-family: "Trebuchet MS", sans-serif;
 }
 
 .card:hover {
     transform: scale(1.002);
-    transition: transform.3s;
+    transition: transform.01s;
     box-shadow: 0 0 10px 10px rgb(236, 235, 235);
 }
 
@@ -22,10 +32,19 @@
     line-height: 40px;
 }
 
+.price {
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+
 .price span {
-    color: rgb(255, 128, 0);
-    font-weight: bold;
-    font-size: 20px;
+    color: #ef4a23;
+    ;
+    font-weight: 600;
+    font-size: 19px;
+    flex: 0 0 22px;
+    padding-top: 10px;
+    line-height: 22px;
 }
 
 .button-color {
@@ -48,15 +67,20 @@
 
 .btn-plus-minus {
     background-color: rgb(255, 253, 253);
-    border-radius: 30%;
-    font-size: 16px;
+    border-radius: 20%;
+    font-size: 10px;
     color: rgb(0, 0, 0);
     margin: 0 12px;
     border: 1px solid #ced5ff;
 }
 
+.qnt-1 {
+    font-size: 14px;
+    font-weight: 550;
+}
+
 .btn-plus-minus:hover {
-    background-color: rgba(0, 51, 255, 0.713);
+    background-color: #3749bb;
     color: #fff;
 }
 
@@ -68,4 +92,98 @@
 
 .card img {
     width: fit-content;
+}
+
+.card img:hover {
+    width: fit-content;
+    cursor: pointer;
+}
+
+a {
+    color: #111;
+    text-decoration: none;
+    background-color: transparent;
+    margin: 0 0 15px;
+    line-height: 20px;
+    font-weight: 580;
+    font-size: 14px;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: transparent;
+    color: #ef4a23;
+}
+
+
+/*exp*/
+
+.actions {
+    flex: 0 0 65px;
+    display: inline-block;
+    width: 100%;
+    padding: 5px 20px 5px 20px;
+}
+
+.actions .st-btn {
+    display: flex;
+    flex-wrap: nowrap;
+    line-height: 45px;
+    background: #fff;
+    background: rgba(55, 75, 185, .1);
+    color: #3749bb;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0 14px;
+    cursor: pointer;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+}
+
+.actions .st-btn .material-icons {
+    line-height: 34px;
+    font-size: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.actions .st-btn:hover {
+    background-color: #3749bb;
+    color: white;
+}
+
+.short-description {
+    padding: 10px 0 0 14px;
+    flex: 1 1 auto;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    display: block;
+    position: relative;
+    min-height: 200px;
+    max-height: 200px;
+}
+
+.short-description li {
+    font-size: 13px;
+    color: #666;
+    position: relative;
+    padding-bottom: 10px;
+    line-height: 16px;
+    display: list-item;
+    display: inline-block;
+    word-wrap: normal;
 }

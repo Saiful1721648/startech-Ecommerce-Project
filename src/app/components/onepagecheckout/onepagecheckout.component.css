@@ -172,3 +172,9 @@ strong {
     font-weight: 600;
     color: #f44336;
 }
+
+.product-title {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}

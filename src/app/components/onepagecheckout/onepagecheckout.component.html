@@ -129,8 +129,8 @@
                                     </thead>
                                     <tbody>
                                         <tr *ngFor="let getCartDetails of getCartDetailss">
-                                            <td class="name">
-                                                <a href="#">{{getCartDetails.productTitle}} </a>
+                                            <td class="name" (click)="openDialogg(getCartDetails)">
+                                                <p class="product-title">{{getCartDetails.productTitle}} </p>
                                                 <div class="options">
                                                 </div>
 

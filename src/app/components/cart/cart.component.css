@@ -39,3 +39,224 @@ button.icon-button {
     margin-bottom: 3%;
     font-size: 15px;
 }
+
+mat-sidenav-container {
+    position: static;
+}
+
+mat-sidenav,
+mat-sidenav-content {
+    position: fixed;
+    width: 21%;
+}
+
+.header-title {
+    background: #01132d;
+    padding: 0 20px;
+    position: relative;
+    flex: 0 50px;
+}
+
+.header-title-name {
+    margin: 0;
+    line-height: 50px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Trebuchet MS", sans-serif;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.cross-btn {
+    background: #01132d;
+    color: white;
+    border: none;
+    margin-top: 27px;
+}
+
+
+/*cart design */
+
+.item {
+    display: flex;
+    padding: 15px 20px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+
+.image {
+    flex: 0 0 60px;
+    display: flex;
+}
+
+.name {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 15px 12px 0;
+}
+
+.info {
+    vertical-align: middle;
+}
+
+.item .info i {
+    font-size: 15px;
+    margin: 0 5px;
+    color: #999;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+.remove {
+    position: absolute;
+    right: 28px;
+    top: 5px;
+    cursor: pointer;
+    height: 2px;
+}
+
+.content {
+    overflow-y: auto;
+    flex: 1 1 auto;
+    min-height: 100px;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.footer {
+    flex: 0 0 auto;
+    padding: 5px 0 43px;
+    position: static;
+}
+
+.promotion-code {
+    background: rgba(55, 73, 187, .1);
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+}
+
+.footer .promotion-code input {
+    height: 36px;
+    font-size: 14px;
+    border: none;
+}
+
+.footer .promotion-code input {
+    height: 36px;
+    font-size: 14px;
+    border: none;
+}
+
+.input-group input {
+    flex: 1 1 auto;
+}
+
+input {
+    font-size: 15px;
+    height: 42px;
+    padding: 5px 15px;
+    background: #fff;
+    outline: none;
+    width: 100%;
+    font-family: "Trebuchet MS", sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.input-group .input-group-btn {
+    flex: 0 0 auto;
+}
+
+.footer .promotion-code button {
+    height: 36px;
+    line-height: 32px;
+}
+
+.btn {
+    background: #3749bb;
+    display: inline-block;
+    border: 2px solid #3749bb;
+    padding: 0 25px;
+    margin: 0;
+    height: 42px;
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+    text-align: center;
+    transition: all 300ms linear;
+}
+
+.btn:hover {
+    background-color: #031483;
+    transition: all 300ms linear;
+}
+
+.footer .total:nth-child(2) {
+    border-bottom: 1px solid #eee;
+}
+
+.footer .total {
+    display: flex;
+    padding: 12px 10px;
+}
+
+.footer .total>div {
+    flex: 1 1 50%;
+    text-align: right;
+    font-size: 16px;
+    color: #666;
+}
+
+.footer .total>div.amount {
+    color: #111;
+    font-weight: 600;
+}
+
+.footer .checkout-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.footer .checkout-btn a {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    text-decoration: none;
+    color: #ef4a23;
+}
+
+.footer .checkout-btn a button {
+    width: 100%;
+    border: none;
+    background: #ef4a23;
+    border-radius: 0;
+}
+
+.footer .checkout-btn a button:hover {
+    background-color: #ce2600;
+    transition: all 300ms linear;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* shake */

@@ -1,0 +1,145 @@
+.container.ac-layout {
+    max-width: 1000px;
+    padding-bottom: 50px;
+}
+
+.panel {
+    max-width: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.m-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.panel h2 {
+    font-weight: normal;
+    margin: 0 0 20px;
+}
+
+.before-login p.no-account-text {
+    text-align: center;
+    margin: 25px 0 35px;
+    border-bottom: 1px solid #eee;
+    height: 11px;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #01132d;
+    line-height: 26px;
+}
+
+.panel .btn {
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    background: #3749bb;
+    display: inline-block;
+    border: 2px solid #3749bb;
+    padding: 0 20px;
+    margin: 0;
+    height: 42px;
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #142489;
+    transition: all 300ms linear;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    color: #ef4a23;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #01132d;
+    line-height: 26px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div {
+    display: block;
+}
+
+body {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Trebuchet MS", sans-serif;
+    line-height: 1.15;
+    font-size: 15px;
+}
+
+form {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input,
+select,
+textarea {
+    font-size: 15px;
+    height: 42px;
+    padding: 5px 15px;
+    background: #fff;
+    outline: none;
+    width: 100%;
+    font-family: "Trebuchet MS", sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.ac-layout input {
+    max-width: 450px;
+}
+
+.ac-layout form .btn {
+    margin-top: 10px;
+}

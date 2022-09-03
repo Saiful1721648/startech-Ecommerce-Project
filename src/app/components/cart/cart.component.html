@@ -6,11 +6,108 @@
         </div>
     </div>
 </div> -->
-
-<div class="cart_icon " routerLink="/shoppingCart">
+<!--
+<div class="cart_icon ">
     <button type="button " class="icon-button fixed-bottom ">
     <span><mat-icon>card_giftcard</mat-icon><br>Cart</span>
     <span class="cart_value ">{{cartItem}}</span>
   </button>
 
-</div>
+</div>  -->
+
+
+<mat-sidenav-container class="example-container" (backdropClick)="close('backdrop')">
+    <mat-sidenav #sidenav mode="side" position="end" (keydown.escape)="close('escape')" disableClose>
+
+        <div class="header-title d-flex flex-row">
+            <div class="col-md-10" style="margin-right: 20px;">
+                <p class="header-title-name">YOUR CART</p>
+            </div>
+            <div class="col-md-2">
+                <button class="cross-btn justify-content-end" mat-button (click)="close('toggle button')"><i class="material-icons">close</i></button>
+            </div>
+
+        </div>
+
+
+
+        <!--exp-->
+
+
+
+        <!--cart-->
+
+
+        <div class="content">
+            <div class="item" *ngFor="let getCartDetail of getCartDetails">
+                <div class="row d-flex flex-row">
+                    <div class="col-3" style="margin-right: 5px ;">
+                        <div class="image"><img src="{{getCartDetail.img}}" width="50" height="60"></div>
+
+                    </div>
+                    <div class="col-8">
+                        <div class="info">
+                            <div class="name">{{getCartDetail.productTitle}}</div>
+                            <span class="amount" style="font-weight:600 ;">{{getCartDetail.amt}}৳</span>
+                            <i class="material-icons">clear</i>
+                            <span class="qnt" style="font-weight:600 ;">{{getCartDetail.qnt}}</span>
+                            <span class="eq" style="font-weight:600 ;">=</span>
+                            <span class="total" style="font-weight:600 ;">{{getCartDetail.qnt *getCartDetail.amt | number}}৳</span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-1">
+                        <div class="remove"><i class="material-icons" aria-hidden="true" (click)="deleteSongFromPlaylist(getCartDetail)">delete</i></div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <!--cart-->
+        <div class="footer">
+            <div class="promotion-code">
+                <div class="row d-flex flex-row input-group">
+                    <div class="col-md-9">
+                        <input type="text" placeholder="Promo Code">
+                    </div>
+                    <div class="col-md-2">
+                        <span class="input-group-btn"><button data-target="#input-cart-coupon" class="btn button-coupon" type="submit">Apply</button></span>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="total">
+                <div class="title text-right">Sub-Total</div>
+                <div class="amount">{{total}}৳</div>
+            </div>
+            <div class="total">
+                <div class="title text-right">Total</div>
+                <div class="amount">{{total}}৳</div>
+            </div>
+            <div class="checkout-btn" routerLink="/onepagecheckout">
+                <a><button class="btn submit" >Checkout</button></a>
+            </div>
+        </div>
+
+
+        <!--exp-->
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+
+        <div class="cart_icon ">
+            <button type="button " class="icon-button fixed-bottom " mat-button (click)="sidenav.open()">
+      <span><mat-icon>card_giftcard</mat-icon><br>Cart</span>
+      <span class="cart_value ">{{cartItem}}</span>
+    </button>
+
+        </div>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,5 +1,6 @@
-<!--card demo making-->
-<div>
+<app-products (clickProduct)=filter($event)></app-products>
+<!--exp-->
+<div class="container">
     <section class="product">
         <div>
             <br>
@@ -7,40 +8,53 @@
             <div class="container mb-5 mt">
                 <div class="row">
                     <!--card-->
-                    <div class="col-md-3" *ngFor="let prod of productArray">
+                    <div class="col-md-3" *ngFor="let prod of filterCategory | fliter:searchKey:'productTitle'">
                         <div class="card mt-3 ">
                             <div class="product-1 align-items-center p-2 text-center">
-                                <img class="responsive" src="{{prod.img}}" alt="p1" class="rounded" width="80" height="220">
-                                <h2>{{prod.productTitle}}</h2>
-                                <!--card info-->
-                                <div class="t-3 info">
-                                    <span class="text1 d-block">{{prod.details}}</span>
-                                    <!--    <span class="text1 ">pc pc pc</span> -->
-
-
+                                <img class="responsive home-img" (click)="openDialogg(prod)" src="{{prod.img}}" alt="p1" class="rounded img-fluid" width="228" height="228">
+                                <a class="card-title" (click)="openDialogg(prod)">{{prod.productTitle}}</a>
+                            </div>
+                            <!--card info-->
+                            <div class="t-3 info">
+                                <div class="short-description">
+                                    <ul>
+                                        <li>{{prod.details}}</li>
+                                        <li>{{prod.details1}}</li>
+                                        <li>{{prod.details2}}</li>
+                                        <li>{{prod.details3}}</li>
+                                    </ul>
                                 </div>
-                                <!--plus-minus-->
-                                <div class="content">
-                                    <label type="button" class="btn btn-plus-minus" (click)="inc(prod)"><i class="fa fa-plus"></i></label>
-                                    <span>{{prod.qnt}}</span>
-                                    <label type="button" class="btn btn-plus-minus" (click)="dec(prod)"><i class="fa fa-minus"></i></label>
-                                </div>
-                                <!--plus-minus end-->
-
-                                <div class="price mt-3 text-dark">
-                                    <span>{{prod.amt}}<b>৳</b></span>
 
 
-                                </div>
 
 
 
                             </div>
+                            <!--plus-minus-->
+                            <div class=" product-1 mt-1 align-items-center p-2 text-center">
+                                <label type="button" class="btn btn-plus-minus" (click)="inc(prod)"><i class="fa fa-plus"></i></label>
+                                <span class="qnt-1">{{prod.qnt}}</span>
+                                <label type="button" class="btn btn-plus-minus" (click)="dec(prod)"><i class="fa fa-minus"></i></label>
+                            </div>
+                            <!--plus-minus end-->
+
+                            <div class="price  align-items-center  text-center">
+                                <span>{{prod.amt}}<b>৳</b></span>
+
+
+                            </div>
+
+
+
+
                             <!--button-->
-                            <button type="button" class="p-3 btn text-center button-color text-blue mt-3 cursor">
-                              <span class="buy-now-btn-icon"><mat-icon>add_shopping_cart</mat-icon></span>
-                        <span class="text-center buy-now" (click)="addCart(prod)"><strong>Buy Now</strong></span>
-                    </button>
+
+
+                            <div class="actions">
+                                <span class="st-btn btn-add-cart cursor" type="button" (click)="addCart(prod)"><i class="material-icons">shopping_cart</i> Buy Now</span>
+
+                            </div>
+
 
 
 

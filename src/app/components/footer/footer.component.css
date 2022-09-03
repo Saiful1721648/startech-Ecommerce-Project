@@ -1,0 +1,110 @@
+footer {
+    background: #081621;
+    padding: 50px 0 0;
+    position: relative;
+}
+
+.main-footer {
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+footer .contact-us {
+    flex: 1 1 25%;
+    padding-right: 50px;
+}
+
+footer h4 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.footer-big-btn {
+    display: block;
+    padding: 10px 0;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, .1);
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    color: #ef4a23;
+}
+
+footer .about-us {
+    padding-left: 0;
+    flex: 1 1 50%;
+}
+
+footer ul li {
+    display: inline-block;
+    width: 32%;
+    line-height: 20px;
+    margin: 0;
+    padding: 0 0 20px;
+}
+
+footer .org-info {
+    flex: 1 1 25%;
+    padding-left: 50px;
+}
+
+.sub-footer {
+    padding: 15px 0 25px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.sub-footer p {
+    font-size: 12px;
+    margin: 0;
+    color: #666;
+}
+
+.sub-footer .powered-by {
+    text-align: right;
+}
+
+.footer-big-btn .ic {
+    color: #fff;
+    float: left;
+    font-size: 36px;
+    line-height: 40px;
+    padding: 0 10px 0 20px;
+    margin-right: 20px;
+    border-right: 1px solid #333;
+}
+
+footer .org-info p b.store-name {
+    color: #fff;
+    font-weight: normal;
+}
+
+footer .org-info p b {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+footer .social-links {
+    padding-top: 10px;
+}
+
+.icon-sprite {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
